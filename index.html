@@ -1,17 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script defer src="theme.js"></script>
-    <link rel="stylesheet" href="Styles/index.css" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
-    />
 
     <!--Font Awesome link is here !!-->
     <link
@@ -30,8 +22,11 @@
       rel="stylesheet"
       href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
     />
-  </head>
 
+    <link rel="stylesheet" href="Assets/CSS/CSS.css" />
+
+    <title>Portfolio</title>
+  </head>
   <body>
     <header class="header" id="header">
       <nav class="nav container">
@@ -66,7 +61,7 @@
             </li>
             <li class="nav__item">
               <a href="#contact" class="nav__link"
-                ><i class="bx bx-message-square-dots nav__icon"></i>Contact Me
+                ><i class="bx bx-message-square-dots nav__icon"></i>Contact
               </a>
             </li>
           </ul>
@@ -83,93 +78,53 @@
       </nav>
     </header>
 
-    <!--=============== HEADER ===============-->
-    <!-- <header class="header" id="header">
-      <nav class="nav container">
-        <a href="#" class="nav__logo">Marlon</a>
-
-        <div class="nav__menu" id="nav-menu">
-          <ul class="nav__list">
-            <li class="nav__item">
-              <a href="#home" class="nav__link active-link">
-                <i class="bx bx-home-alt nav__icon"></i>
-                <span class="nav__name">Home</span>
-              </a>
-            </li>
-
-            <li class="nav__item">
-              <a href="#about" class="nav__link">
-                <i class="bx bx-user nav__icon"></i>
-                <span class="nav__name">About</span>
-              </a>
-            </li>
-
-            <li class="nav__item">
-              <a href="#skills" class="nav__link">
-                <i class="bx bx-book-alt nav__icon"></i>
-                <span class="nav__name">Skills</span>
-              </a>
-            </li>
-
-            <li class="nav__item">
-              <a href="#portfolio" class="nav__link">
-                <i class="bx bx-briefcase-alt nav__icon"></i>
-                <span class="nav__name">Portfolio</span>
-              </a>
-            </li>
-
-            <li class="nav__item">
-              <a href="#contactme" class="nav__link">
-                <i class="bx bx-message-square-detail nav__icon"></i>
-                <span class="nav__name">Contactme</span>
-              </a>
-            </li>
-          </ul>
-        </div>
-
-        <img src="assets/img/perfil.png" alt="" class="nav__img" />
-      </nav>
-    </header> -->
-
+    <!--  ====================  MAIN  ====================  -->
     <main class="main">
       <!--=============== HOME + About ===============-->
       <section class="container section section__height" id="home">
-        <!--===== HOME =====-->
-        <h2 class="section__title">Home</h2>
+        <h2 class="section_title">Home</h2>
       </section>
+
       <!--===== ABOUT =====-->
       <section class="container section section__height" id="about">
-        <h2 class="section__title">About</h2>
+        <h2 class="section_title">About Me</h2>
+        <span class="section_subtitle">My Introduction</span>
       </section>
 
       <!--=============== TECHNOLOGY ===============-->
       <section class="container section section__height" id="technology">
-        <h2 class="section__title">Technology</h2>
+        <h2 class="section_title">Technology</h2>
+        <span class="section_subtitle">My Tech Stacks</span>
       </section>
 
       <!--=============== Experience ===============-->
       <section class="container section section__height" id="experience">
-        <h2 class="section__title">Experience</h2>
+        <h2 class="section_title">Experience</h2>
+        <span class="section_subtitle">Work Experience</span>
       </section>
 
       <!--=============== PROJECT ===============-->
       <section class="container section section__height" id="project">
-        <h2 class="section__title">Projects</h2>
+        <h2 class="section_title">Projects</h2>
+        <span class="section_subtitle">Food and Recipe</span>
       </section>
 
       <!--=============== ACHIEVEMENT ===============-->
       <section class="container section section__height" id="achievement">
-        <h2 class="section__title">Achievements</h2>
+        <h2 class="section_title">Achievements</h2>
+        <span class="section_subtitle">My Accomplishments</span>
       </section>
 
       <!--=============== EDUCATION ===============-->
       <section class="container section section__height" id="education">
-        <h2 class="section__title">Education</h2>
+        <h2 class="section_title">Education</h2>
+        <span class="section_subtitle">Childhood Days</span>
       </section>
 
       <!--=============== BLOG ===============-->
       <section class="container section section__height" id="blog">
-        <h2 class="section__title">Blogs</h2>
+        <h2 class="section_title">Blogs</h2>
+        <span class="section_subtitle">Poetic Thoughts</span>
       </section>
 
       <!--  ==================  CONTACT ME  ==================  -->
@@ -242,6 +197,9 @@
             </div>
           </form>
         </div>
+        <div class="contact__container container grid">
+          <h3 class="contact__title">You can also reach me out at</h3>
+        </div>
       </section>
     </main>
 
@@ -267,7 +225,7 @@
             </li>
             <li>
               <a href="#contact" class="footer__link"
-                ><i class="bx bx-chevron-right"></i> Contactme</a
+                ><i class="bx bx-chevron-right"></i> Contact</a
               >
             </li>
           </ul>
@@ -328,7 +286,8 @@
       <i class="uil uil-arrow-up scrollup__icon"></i>
     </a>
 
-    <!--=============== MAIN JS ===============-->
-    <script src="Javascript/index.js"></script>
+    <script src="Assets/JS/swiper-bundle.min.js"></script>
+
+    <script src="Assets/JS/Js.js"></script>
   </body>
 </html>
