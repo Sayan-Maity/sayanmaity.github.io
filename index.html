@@ -13,11 +13,17 @@
       href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
     />
 
+    <!--Font Awesome link is here !!-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
     <!--=============== BOXICONS ===============-->
-    <!-- <link
+    <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
-    /> -->
+    />
 
     <!--Iconscout unicon icons cdn link is here !!-->
     <link
@@ -29,40 +35,54 @@
   <body>
     <header class="header" id="header">
       <nav class="nav container">
-        <a href="#" class="nav__logo">Alexa</a>
+        <a href="#" class="nav__logo">Sayan</a>
 
         <div class="nav__menu" id="nav-menu">
           <ul class="nav__list grid">
             <li class="nav__item">
-              <a href="#home" class="nav__link active-link"
-                ><i class="uil uil-estate nav__icon"></i> Home</a
+              <a href="#about" class="nav__link active-link"
+                ><i class="bx bx-user nav__icon"></i> About</a
               >
             </li>
             <li class="nav__item">
-              <a href="#about" class="nav__link"
-                ><i class="uil uil-user nav__icon"></i> About</a
+              <a href="#experience" class="nav__link"
+                ><i class="bx bx-briefcase nav__icon"></i> Experience</a
               >
             </li>
             <li class="nav__item">
-              <a href="#skills" class="nav__link"
-                ><i class="uil uil-file nav__icon"></i> Skills</a
+              <a href="#project" class="nav__link"
+                ><i class="bx bxs-file-image nav__icon"></i> Project</a
               >
             </li>
             <li class="nav__item">
-              <a href="#services" class="nav__link"
-                ><i class="uil uil-briefcase-alt nav__icon"></i> Services</a
+              <a href="#achievement" class="nav__link">
+                <i class="bx bx-medal nav__icon"></i>Achievement</a
               >
             </li>
-
+            <li class="nav__item">
+              <a href="#blog" class="nav__link"
+                ><i class="bx bxl-blogger nav__icon"></i> Blog</a
+              >
+            </li>
             <li class="nav__item">
               <a href="#contact" class="nav__link"
-                ><i class="uil uil-envelope-edit nav__icon"></i> Contact Me
+                ><i class="bx bx-message-square-dots nav__icon"></i>Contact Me
               </a>
             </li>
           </ul>
+          <i class="uil uil-times nav__close" id="nav-close"></i>
+        </div>
+        <div class="nav__btns">
+          <!-- Theme change button -->
+          <i class="bx bx-moon change-theme" id="theme-button"></i>
+
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="bx bxs-widget"></i>
+          </div>
         </div>
       </nav>
     </header>
+
     <!--=============== HEADER ===============-->
     <!-- <header class="header" id="header">
       <nav class="nav container">
@@ -111,32 +131,202 @@
       </nav>
     </header> -->
 
-    <main>
-      <!--=============== HOME ===============-->
+    <main class="main">
+      <!--=============== HOME + About ===============-->
       <section class="container section section__height" id="home">
+        <!--===== HOME =====-->
         <h2 class="section__title">Home</h2>
       </section>
-
-      <!--=============== ABOUT ===============-->
+      <!--===== ABOUT =====-->
       <section class="container section section__height" id="about">
         <h2 class="section__title">About</h2>
       </section>
 
-      <!--=============== SKILLS ===============-->
-      <section class="container section section__height" id="skills">
-        <h2 class="section__title">Skills</h2>
+      <!--=============== TECHNOLOGY ===============-->
+      <section class="container section section__height" id="technology">
+        <h2 class="section__title">Technology</h2>
       </section>
 
-      <!--=============== PORTFOLIO ===============-->
-      <section class="container section section__height" id="portfolio">
-        <h2 class="section__title">Portfolio</h2>
+      <!--=============== Experience ===============-->
+      <section class="container section section__height" id="experience">
+        <h2 class="section__title">Experience</h2>
       </section>
 
-      <!--=============== CONTACTME ===============-->
-      <section class="container section section__height" id="contactme">
-        <h2 class="section__title">Contactme</h2>
+      <!--=============== PROJECT ===============-->
+      <section class="container section section__height" id="project">
+        <h2 class="section__title">Projects</h2>
+      </section>
+
+      <!--=============== ACHIEVEMENT ===============-->
+      <section class="container section section__height" id="achievement">
+        <h2 class="section__title">Achievements</h2>
+      </section>
+
+      <!--=============== EDUCATION ===============-->
+      <section class="container section section__height" id="education">
+        <h2 class="section__title">Education</h2>
+      </section>
+
+      <!--=============== BLOG ===============-->
+      <section class="container section section__height" id="blog">
+        <h2 class="section__title">Blogs</h2>
+      </section>
+
+      <!--  ==================  CONTACT ME  ==================  -->
+      <section class="contact section" id="contact">
+        <h2 class="section_title">Contact Me</h2>
+        <span class="section_subtitle">Get in touch</span>
+
+        <div class="contact__container container grid">
+          <div>
+            <div class="contact__information">
+              <i class="uil uil-phone contact__icon"></i>
+
+              <div>
+                <h3 class="contact__title">Call Me</h3>
+                <span class="contact__subtitle">999-777-666</span>
+              </div>
+            </div>
+
+            <div class="contact__information">
+              <i class="uil uil-envelope contact__icon"></i>
+
+              <div>
+                <h3 class="contact__title">Email</h3>
+                <span class="contact__subtitle">alexa@gmail.com</span>
+              </div>
+            </div>
+
+            <div class="contact__information">
+              <i class="uil uil-map-marker contact__icon"></i>
+
+              <div>
+                <h3 class="contact__title">Location</h3>
+                <span class="contact__subtitle"
+                  >Peru - Lima Av. Boliver #123</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <form action="" class="contact__form grid">
+            <div class="contact__inputs grid">
+              <div class="contact__content">
+                <label for="" class="contact__label">Name</label>
+                <input type="text" class="contact__input" />
+              </div>
+              <div class="contact__content">
+                <label for="" class="contact__label">Email</label>
+                <input type="email" class="contact__input" />
+              </div>
+            </div>
+            <div class="contact__content">
+              <label for="" class="contact__label">Project</label>
+              <input type="text" class="contact__input" />
+            </div>
+            <div class="contact__content">
+              <label for="" class="contact__label">Message</label>
+              <textarea
+                name=""
+                id=""
+                cols="0"
+                class="contact__input"
+                rows="7"
+              ></textarea>
+            </div>
+            <div>
+              <a href="#" class="button button--flex">
+                Send Mesage
+                <i class="uil uil-message button__icon"></i>
+              </a>
+            </div>
+          </form>
+        </div>
       </section>
     </main>
+
+    <!--  ==================  FOOTER  ==================  -->
+    <footer class="footer">
+      <div class="footer__bg">
+        <div class="footer__container container grid">
+          <div>
+            <h1 class="footer__title">Sayan</h1>
+            <span class="footer__subtitle">Frontend Developer</span>
+          </div>
+
+          <ul class="footer__links">
+            <li>
+              <a href="#services" class="footer__link"
+                ><i class="bx bx-chevron-right"></i> Services</a
+              >
+            </li>
+            <li>
+              <a href="#portfolio" class="footer__link"
+                ><i class="bx bx-chevron-right"></i> Portfolio</a
+              >
+            </li>
+            <li>
+              <a href="#contact" class="footer__link"
+                ><i class="bx bx-chevron-right"></i> Contactme</a
+              >
+            </li>
+          </ul>
+          <div class="footer__socials">
+            <a
+              href="https://www.facebook.com/sayan.maity.7169709/"
+              class="footer__social"
+              target="_blank"
+            >
+              <i class="bx bxl-meta"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/sayancr777_official/"
+              class="footer__social"
+              target="_blank"
+            >
+              <i class="bx bxl-instagram"></i>
+            </a>
+            <a
+              href="https://twitter.com/"
+              class="footer__social"
+              target="_blank"
+            >
+              <i class="bx bxl-twitter"></i>
+            </a>
+            <a
+              href="https://github.com/Sayan-Maity"
+              class="footer__social"
+              target="_blank"
+            >
+              <i class="bx bxl-github"></i>
+            </a>
+            <a
+              href="https://discord.com/channels/@me/912927284850225153"
+              class="footer__social"
+              target="_blank"
+            >
+              <i class="bx bxl-discord-alt"></i>
+            </a>
+            <a
+              href="mailto:sayancr777@gmail.com"
+              class="footer__social"
+              target="_blank"
+            >
+              <i class="bx bxl-gmail"></i>
+            </a>
+          </div>
+        </div>
+
+        <p class="footer__copy">
+          <span>© </span>2022 Sayan Maity | All rights reserved
+        </p>
+      </div>
+    </footer>
+
+    <!--  ==================  SCROLL TOP  ==================  -->
+    <a href="#" class="scrollup" id="scroll-up">
+      <i class="uil uil-arrow-up scrollup__icon"></i>
+    </a>
 
     <!--=============== MAIN JS ===============-->
     <script src="Javascript/index.js"></script>
