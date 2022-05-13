@@ -841,6 +841,55 @@ img {
     border-bottom: 1px solid;
 
 }
+.contact__social ul{
+    display: flex;
+    width: 80%;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+.contact__social ul a{
+    cursor: pointer;
+    font-size: 1.7rem;
+    line-height: 2.3rem;
+    margin: 0 5px 10px;
+    transition: .2s ease-in;
+}
+.contact__social ul a i{
+    border-radius: 50%;
+    padding:5px 5px;
+    color: white;
+}
+.contact__social ul a i.blogger{
+    background: linear-gradient(180deg, #F5811E, #F16321);
+}
+.contact__social ul a i.github{
+    background-color: #222;
+}
+.contact__social ul a i.linkedin{
+    background-color: #2796CD;
+}
+.contact__social ul a i.gmail{
+    background-color: #CB3328;
+}
+.contact__social ul a i.meta{
+    background-color: #0083FF;
+}
+.contact__social ul a i.instagram{
+    background: linear-gradient(210deg, #933BB6, #CF2B8A, #F9CD6A);
+}
+.contact__social ul a i.discord{
+    background-color: #4E63F4;
+}
+.contact__social ul a i.spotify{
+    background-color: #18D55D;
+}
+.contact__social ul a i.twitter{
+    background-color: #1BA9DB;
+}
+.contact__social ul a i.stackoverflow{
+    background-color: #F68002;
+}
+
 
 /*  ==================  FOOTER  ==================  */
 .footer__container {
