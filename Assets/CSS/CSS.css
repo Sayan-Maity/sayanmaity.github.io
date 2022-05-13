@@ -846,6 +846,7 @@ img {
     width: 80%;
     flex-wrap: wrap;
     justify-content: flex-start;
+    position: relative;
 }
 .contact__social ul a{
     cursor: pointer;
@@ -859,6 +860,48 @@ img {
     padding:5px 5px;
     color: white;
 }
+.contact__social ul a i:hover{
+    background: #222 !important;
+}
+.contact__social ul span{
+    position: absolute;
+    line-height: 1.2rem;
+    font-size: 0.75rem;
+    color: #111;
+    background-color: #fff;
+    opacity: 1;
+    border: 1px solid black;
+    padding: 0 5px;
+    visibility: hidden; 
+    opacity: 0;
+    transition: opacity 2s ease-out;
+}
+ul a#a-blogger:hover span.span__a-blogger,
+ul a#a-github:hover span.span__a-github,
+ul a#a-linkedin:hover span.span__a-linkedin,
+ul a#a-gmail:hover span.span__a-gmail,
+ul a#a-meta:hover span.span__a-meta,
+ul a#a-instagram:hover span.span__a-instagram,
+ul a#a-discord:hover span.span__a-discord,
+ul a#a-spotify:hover span.span__a-spotify,
+ul a#a-twitter:hover span.span__a-twitter,
+ul a#a-stackoverflow:hover span.span__a-stackoverflow{
+    visibility: visible;
+    opacity: 1;
+}
+.contact__social ul span.span__a-blogger,
+.contact__social ul span.span__a-github,
+.contact__social ul span.span__a-linkedin,
+.contact__social ul span.span__a-gmail,
+.contact__social ul span.span__a-meta,
+.contact__social ul span.span__a-instagram,
+.contact__social ul span.span__a-discord,
+.contact__social ul span.span__a-spotify,
+.contact__social ul span.span__a-twitter,
+.contact__social ul span.span__a-stackoverflow{
+    transform: translate(-90%, -110%);
+}
+
 .contact__social ul a i.blogger{
     background: linear-gradient(180deg, #F5811E, #F16321);
 }
